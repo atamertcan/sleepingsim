@@ -18,7 +18,7 @@ The project features a modern **Dark Mode** interface and a robust microservices
 * **Modern UI:** User-friendly Dark Mode interface.
 
 
-* **IMPORANT:** User ids are not dynamic for now. You have to change it manually in sleeping_sim_training/main.py. It will be fixed soon.
+ **IMPORANT:** User ids are not dynamic for now. You have to change it manually in sleeping_sim_training/main.py. It will be fixed soon.
 
 ## 📸 Screenshots
 
