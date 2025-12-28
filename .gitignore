@@ -1,0 +1,30 @@
+# --- Sistem ve IDE Dosyaları ---
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+*.log
+
+# --- Backend (Java/Spring) ---
+**/target/
+**/.mvn/
+**/mvnw
+**/mvnw.cmd
+**/*.class
+
+# --- Frontend (React) ---
+**/node_modules/
+**/build/
+**/dist/
+**/.env
+
+# --- Python (AI/Training) ---
+**/__pycache__/
+**/*.pyc
+**/venv/
+**/.venv/
+
+# --- Büyük Video Dosyaları (Yüklenmesin) ---
+*.mp4
+*.avi
+*.mov

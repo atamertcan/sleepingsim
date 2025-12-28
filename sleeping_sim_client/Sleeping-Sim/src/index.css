@@ -1,0 +1,332 @@
+/* Google Fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Değişkenler */
+:root {
+    --color-primary: #5A67D8;
+    --color-secondary: #48BB78;
+    --color-error: #F56565;
+    --color-success: #48BB78;
+    --color-background-dark: #1A202C;
+    --color-background-light: #F7FAFC;
+    --color-card: #2D3748;
+    --color-text-light: #E2E8F0; 
+    --color-text-dark: #2D3748; 
+}
+
+/* Global Stil */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background-dark);
+    color: var(--color-text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-background {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.main-content-area {
+    background-color: var(--color-card);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Başlık Alanı */
+.app-header {
+    text-align: center;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 5px 0 0 0;
+}
+.logo-icon {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.screen-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.form-container, .dashboard-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin-bottom: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.input {
+    padding: 12px 15px;
+    border: 1px solid #4A5568;
+    border-radius: 8px;
+    background-color: #4A5568;
+    color: var(--color-text-light);
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.5);
+    outline: none;
+}
+
+/* Butonlar */
+.button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.primary-button {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.primary-button:hover:not(:disabled) {
+    background-color: #6B77D9;
+    transform: translateY(-1px);
+}
+
+.secondary-button {
+    background-color: transparent;
+    border: 2px solid var(--color-error);
+    color: var(--color-error);
+}
+
+.secondary-button:hover:not(:disabled) {
+    background-color: rgba(245, 101, 101, 0.1);
+}
+
+.link-text {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: var(--color-secondary);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.link-button:hover {
+    color: #82E4B7;
+}
+
+/* Mesaj Kutusu */
+.message-box {
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 20px 0;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.message-box.error {
+    background-color: #FED7D7;
+    color: var(--color-error);
+    border: 1px solid var(--color-error);
+}
+
+.message-box.success {
+    background-color: #C6F6D5;
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
+}
+
+.message-box.info {
+    background-color: #BEE3F8;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+/* Dashboard Stilleri */
+.score-card {
+    background-color: #4A5568;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.welcome-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    color: #A0AEC0;
+}
+
+.username-highlight {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.score-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #718096;
+    border-bottom: 1px solid #718096;
+}
+
+.score-label {
+    font-size: 1rem;
+    color: #A0AEC0;
+    margin-bottom: 5px;
+}
+
+.score-value {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-secondary);
+    margin: 0;
+    transition: all 0.5s ease-out;
+}
+
+.score-value.loading {
+    color: #A0AEC0;
+    opacity: 0.5;
+}
+
+.info-text {
+    font-size: 0.85rem;
+    color: #CBD5E0;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #718096;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 600px) {
+    .main-content-area {
+        padding: 20px;
+    }
+
+    .app-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .score-value {
+        font-size: 2.5rem;
+    }
+}
+
+/* Lider Tablosu (Leaderboard) Özel Stilleri */
+
+.leaderboard-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    background: var(--input-bg);
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+}
+.leaderboard-rank {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    width: 40px;
+}
+.leaderboard-username {
+    font-weight: 600;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+.leaderboard-score {
+    font-weight: 700;
+    color: var(--primary-hover);
+}
+
+
